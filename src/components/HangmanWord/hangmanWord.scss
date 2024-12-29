@@ -1,0 +1,15 @@
+.hangmanWord{
+    display: flex;
+    gap: 1rem;
+
+    margin: 0 auto;
+
+    font-size: 6rem;
+    font-weight: 1000;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .letter{
+        border-bottom: 0.5rem solid #000;
+    }
+}

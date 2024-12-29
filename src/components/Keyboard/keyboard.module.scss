@@ -1,0 +1,41 @@
+.keyboard{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+    column-gap: 1.5rem;
+    row-gap: 0.5rem;
+
+    width: 85vw;
+    max-width: 800px !important;
+    margin: 0 auto;
+}
+
+
+button {
+    width: 4rem;
+    height: 4rem;
+
+    margin: 0.2rem;
+
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    background-color: #e9e9ed;
+    border-radius: 1rem;
+    border: 1px solid #000;
+
+    &:hover:not(:disabled) , &:focus:not(:disabled){
+        background-color: aqua;
+    }
+}
+
+.active{
+    background-color: blue;
+    color: #fff;
+}
+
+.inactive{
+    opacity: 0.3;
+}
+
